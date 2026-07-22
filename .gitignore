@@ -44,9 +44,13 @@ execution-plan.md
 phase-1-plan.md
 open-questions.md
 strongerModelLook.md
+brainstorm.md
+market-research.md
 improvements/
 docs/blockers.md
 docs/followups-code-review.md
+docs/research-and-data.md
+docs/mvp-implementation.md
 
 # Report — kept local, README carries the results for readers
 report/
