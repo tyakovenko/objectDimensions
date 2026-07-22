@@ -1,0 +1,37 @@
+[project]
+name = "object-dimensions"
+version = "0.1.0"
+description = "Phase 1 — visual hull pipeline for rigid-object dimension extraction from 4 photos"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "opencv-python>=4.9",
+    "trimesh>=4.0",
+    "matplotlib>=3.8",
+    "scikit-image>=0.22",
+    "pillow>=10.0",
+    "shapely>=2.0",
+    "rtree>=1.0",
+]
+
+[project.optional-dependencies]
+# GPU segmentation path. Installed only if the GPU check passes (see docs/blockers.md B2).
+sam = [
+    "torch>=2.2",
+    "torchvision>=0.17",
+]
+dev = [
+    "pytest>=8.0",
+    "ipython>=8.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

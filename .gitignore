@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project data — re-derivable, heavy, or potentially sensitive
+data/
+output/
+*.ply
+*.npy
+# Object photo sets (data)
+bad/
+box/
+shampoo/
+
+# Heavy artifacts and course-submission bundles (not part of the public repo)
+*.zip
+submission/
+submissionCode/
+course_files_export/
+presentation/
+
+# Claude-internal files
+project-log.md
+CLAUDE.md
+.claude/
+
+# Internal planning / working docs — stay local
+execution-plan.md
+phase-1-plan.md
+open-questions.md
+strongerModelLook.md
+improvements/
+docs/blockers.md
+docs/followups-code-review.md
+
+# Reports — only commit final, not drafts or auto-generated figures
+report/figures/*.png
+report/figures/*.pdf
+!report/figures/.gitkeep
