@@ -48,7 +48,5 @@ improvements/
 docs/blockers.md
 docs/followups-code-review.md
 
-# Reports — only commit final, not drafts or auto-generated figures
-report/figures/*.png
-report/figures/*.pdf
-!report/figures/.gitkeep
+# Report — kept local, README carries the results for readers
+report/
